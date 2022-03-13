@@ -20,11 +20,8 @@ nav a {
     padding: 20px;
 }
 
-#whole {
-    background-color: grey;
-}
-
 #welcome-section {
+    height: 100vh;
     margin: 200px 200px;
     padding: 200px 200px;
     text-align: center;
@@ -68,11 +65,22 @@ nav a {
 }
 
 .fa-email {
-    background: #007bb5;
+    background: red;
     color: white;
   }
 
   .fa-github {
-    background: #007bb5;
+    background: black;
     color: white;
+  }
+
+  @media only screen and (max-width: 1034px) {
+    #welcome-section {
+        height: 100vh;
+        float: left;
+    }
+
+    #project-tile {
+        float: right;
+    }
   }
